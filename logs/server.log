@@ -1,0 +1,730 @@
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:8080
+{"time":"2025-03-14T18:10:10.298545+07:00","id":"","remote_ip":"::1","host":"localhost:8080","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":231417,"latency_human":"231.417µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:10:10.47559+07:00","id":"","remote_ip":"::1","host":"localhost:8080","method":"GET","uri":"/favicon.ico","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":15000,"latency_human":"15µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T18:10:38.02563+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":242833,"latency_human":"242.833µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:10:38.17854+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/favicon.ico","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":29625,"latency_human":"29.625µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:10:49.7504+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":401,"error":"code=401, message=Unauthorized: missing value in request header","latency":109417,"latency_human":"109.417µs","bytes_in":0,"bytes_out":60}
+{"time":"2025-03-14T18:10:54.848709+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":123125,"latency_human":"123.125µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:16.194824+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":2428000,"latency_human":"2.428ms","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:19.008327+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":168459,"latency_human":"168.459µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:19.34054+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":22083,"latency_human":"22.083µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:19.527948+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":15500,"latency_human":"15.5µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:19.706779+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":23916,"latency_human":"23.916µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:19.828973+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":42833,"latency_human":"42.833µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:21.342915+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":318333,"latency_human":"318.333µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:21.738328+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":22750,"latency_human":"22.75µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:22.334533+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/register","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":405,"error":"code=405, message=Method Not Allowed","latency":82500,"latency_human":"82.5µs","bytes_in":0,"bytes_out":33}
+{"time":"2025-03-14T18:32:28.036704+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":89250,"latency_human":"89.25µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:34:52.408691+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":347541,"latency_human":"347.541µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:34:52.885082+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":48834,"latency_human":"48.834µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:34:53.133248+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":42833,"latency_human":"42.833µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:34:53.305404+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":404,"error":"code=404, message=Not Found","latency":34417,"latency_human":"34.417µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T18:35:01.844287+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":201,"error":"","latency":50583,"latency_human":"50.583µs","bytes_in":0,"bytes_out":5}
+{"time":"2025-03-14T18:36:17.465615+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":401,"error":"code=401, message=Unauthorized: missing value in request header","latency":272083,"latency_human":"272.083µs","bytes_in":0,"bytes_out":60}
+{"time":"2025-03-14T18:36:21.438252+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":201,"error":"","latency":87709,"latency_human":"87.709µs","bytes_in":0,"bytes_out":5}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T18:36:30.412955+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":217041,"latency_human":"217.041µs","bytes_in":0,"bytes_out":26}
+{"time":"2025-03-14T18:36:30.526158+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":11333,"latency_human":"11.333µs","bytes_in":0,"bytes_out":26}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T18:37:07.058236+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":98542,"latency_human":"98.542µs","bytes_in":0,"bytes_out":34}
+{"time":"2025-03-14T18:41:28.014419+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1048519667,"latency_human":"1.048519667s","bytes_in":107,"bytes_out":166}
+{"time":"2025-03-14T18:42:33.080314+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1010613083,"latency_human":"1.010613083s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-14T18:42:46.674135+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/product","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":1469459,"latency_human":"1.469459ms","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T18:43:05.388171+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":7848417,"latency_human":"7.848417ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:43:10.919407+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1071375,"latency_human":"1.071375ms","bytes_in":0,"bytes_out":158}
+{"time":"2025-03-14T18:43:40.904267+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1043233333,"latency_human":"1.043233333s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-14T18:45:00.205099+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":7447208,"latency_human":"7.447208ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:32.074517+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2131459,"latency_human":"2.131459ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:33.251651+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1484000,"latency_human":"1.484ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:33.638459+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":878708,"latency_human":"878.708µs","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:33.946999+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1304375,"latency_human":"1.304375ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:35.682877+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1424458,"latency_human":"1.424458ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T18:46:38.920819+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1280125,"latency_human":"1.280125ms","bytes_in":0,"bytes_out":158}
+{"time":"2025-03-14T18:46:39.895202+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":899584,"latency_human":"899.584µs","bytes_in":0,"bytes_out":158}
+{"time":"2025-03-14T18:47:11.158934+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2299500,"latency_human":"2.2995ms","bytes_in":0,"bytes_out":158}
+{"time":"2025-03-14T18:47:37.050547+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1005708,"latency_human":"1.005708ms","bytes_in":0,"bytes_out":158}
+{"time":"2025-03-14T18:55:03.1147+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":79826125,"latency_human":"79.826125ms","bytes_in":0,"bytes_out":3}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T18:56:07.229561+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2935000,"latency_human":"2.935ms","bytes_in":0,"bytes_out":51}
+{"time":"2025-03-14T18:56:10.479297+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":275833,"latency_human":"275.833µs","bytes_in":107,"bytes_out":164}
+{"time":"2025-03-14T18:56:25.725168+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":129709,"latency_human":"129.709µs","bytes_in":107,"bytes_out":164}
+{"time":"2025-03-14T18:58:40.052017+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3848583,"latency_human":"3.848583ms","bytes_in":0,"bytes_out":51}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:02:40.123283+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":536416,"latency_human":"536.416µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:05:08.012722+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":2224750,"latency_human":"2.22475ms","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:05:09.691934+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":78125,"latency_human":"78.125µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:05:22.103089+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":229416,"latency_human":"229.416µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:05:54.090074+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":401,"error":"code=401, message=Unauthorized: missing value in request header","latency":1072333,"latency_human":"1.072333ms","bytes_in":0,"bytes_out":60}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:06:28.802975+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":901750,"latency_human":"901.75µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:06:30.079952+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":117666,"latency_human":"117.666µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:07:18.264937+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":796334,"latency_human":"796.334µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:07:18.917577+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":81084,"latency_human":"81.084µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:07:20.203803+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":67375,"latency_human":"67.375µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:08:33.880432+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2610791,"latency_human":"2.610791ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T19:08:37.169187+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":163666,"latency_human":"163.666µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:08:39.258161+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":78834,"latency_human":"78.834µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:08:40.881124+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/product","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":149083,"latency_human":"149.083µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:09:11.045239+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/product","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":808417,"latency_human":"808.417µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:09:12.400945+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3617916,"latency_human":"3.617916ms","bytes_in":0,"bytes_out":51}
+{"time":"2025-03-14T19:09:17.445423+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2215834,"latency_human":"2.215834ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T19:09:28.125638+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":436917,"latency_human":"436.917µs","bytes_in":23,"bytes_out":164}
+{"time":"2025-03-14T19:09:39.434898+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":305375,"latency_human":"305.375µs","bytes_in":23,"bytes_out":164}
+{"time":"2025-03-14T19:09:39.858688+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":111416,"latency_human":"111.416µs","bytes_in":23,"bytes_out":164}
+{"time":"2025-03-14T19:09:47.019829+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1007761666,"latency_human":"1.007761666s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-14T19:09:49.811983+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1328292,"latency_human":"1.328292ms","bytes_in":0,"bytes_out":3}
+{"time":"2025-03-14T19:09:51.685803+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":121417,"latency_human":"121.417µs","bytes_in":23,"bytes_out":164}
+{"time":"2025-03-14T19:09:53.651064+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":124209,"latency_human":"124.209µs","bytes_in":107,"bytes_out":164}
+{"time":"2025-03-14T19:09:56.063527+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":142084,"latency_human":"142.084µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:19:45.674119+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":6007917,"latency_human":"6.007917ms","bytes_in":23,"bytes_out":144}
+{"time":"2025-03-14T19:20:03.643415+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":3764500,"latency_human":"3.7645ms","bytes_in":23,"bytes_out":142}
+{"time":"2025-03-14T19:20:05.576966+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":101958,"latency_human":"101.958µs","bytes_in":107,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:22:14.828684+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":66583,"latency_human":"66.583µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:22:53.40432+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":25334,"latency_human":"25.334µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:23:26.717339+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":11466792,"latency_human":"11.466792ms","bytes_in":23,"bytes_out":144}
+{"time":"2025-03-14T19:23:34.453327+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3235500,"latency_human":"3.2355ms","bytes_in":0,"bytes_out":396}
+{"time":"2025-03-14T19:24:06.25576+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/categories/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":9891042,"latency_human":"9.891042ms","bytes_in":23,"bytes_out":138}
+{"time":"2025-03-14T19:24:09.328741+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2101709,"latency_human":"2.101709ms","bytes_in":0,"bytes_out":395}
+{"time":"2025-03-14T19:24:27.064924+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/categories/1","user_agent":"PostmanRuntime/7.43.2","status":204,"error":"","latency":7015666,"latency_human":"7.015666ms","bytes_in":0,"bytes_out":0}
+{"time":"2025-03-14T19:24:31.170468+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2090791,"latency_human":"2.090791ms","bytes_in":0,"bytes_out":264}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:40:26.941465+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3918333,"latency_human":"3.918333ms","bytes_in":0,"bytes_out":415}
+{"time":"2025-03-14T19:40:38.378613+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":132458,"latency_human":"132.458µs","bytes_in":95,"bytes_out":24}
+{"time":"2025-03-14T19:41:08.703229+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":416958,"latency_human":"416.958µs","bytes_in":95,"bytes_out":24}
+{"time":"2025-03-14T19:41:44.538311+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":400125,"latency_human":"400.125µs","bytes_in":129,"bytes_out":24}
+{"time":"2025-03-14T19:41:44.931303+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":123583,"latency_human":"123.583µs","bytes_in":129,"bytes_out":24}
+{"time":"2025-03-14T19:41:46.236842+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":151083,"latency_human":"151.083µs","bytes_in":129,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:41:54.329776+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"xml: unsupported type: echo.Map","latency":13779500,"latency_human":"13.7795ms","bytes_in":129,"bytes_out":39}
+{"time":"2025-03-14T19:42:00.728574+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3236541,"latency_human":"3.236541ms","bytes_in":0,"bytes_out":656}
+{"time":"2025-03-14T19:42:14.165202+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/1","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":2182625,"latency_human":"2.182625ms","bytes_in":129,"bytes_out":100}
+{"time":"2025-03-14T19:42:25.846473+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":1299041,"latency_human":"1.299041ms","bytes_in":129,"bytes_out":100}
+{"time":"2025-03-14T19:42:27.104777+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":1131625,"latency_human":"1.131625ms","bytes_in":129,"bytes_out":100}
+{"time":"2025-03-14T19:43:43.279131+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api//users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":382208,"latency_human":"382.208µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T19:43:46.582444+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3408542,"latency_human":"3.408542ms","bytes_in":0,"bytes_out":655}
+{"time":"2025-03-14T19:44:04.476493+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":13006167,"latency_human":"13.006167ms","bytes_in":110,"bytes_out":39}
+{"time":"2025-03-14T19:44:20.570331+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":6374041,"latency_human":"6.374041ms","bytes_in":0,"bytes_out":39}
+{"time":"2025-03-14T19:45:28.937789+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"xml: unsupported type: echo.Map","latency":6708291,"latency_human":"6.708291ms","bytes_in":129,"bytes_out":39}
+{"time":"2025-03-14T19:45:32.392844+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":5204500,"latency_human":"5.2045ms","bytes_in":129,"bytes_out":109}
+{"time":"2025-03-14T19:45:38.621971+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":2499208,"latency_human":"2.499208ms","bytes_in":129,"bytes_out":109}
+{"time":"2025-03-14T19:45:59.306567+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"xml: unsupported type: echo.Map","latency":6095833,"latency_human":"6.095833ms","bytes_in":129,"bytes_out":39}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:52:16.886849+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"xml: unsupported type: echo.Map","latency":9980834,"latency_human":"9.980834ms","bytes_in":129,"bytes_out":39}
+{"time":"2025-03-14T19:52:19.696277+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1615958,"latency_human":"1.615958ms","bytes_in":0,"bytes_out":233}
+{"time":"2025-03-14T19:55:05.964453+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"xml: unsupported type: echo.Map","latency":117497500,"latency_human":"117.4975ms","bytes_in":135,"bytes_out":39}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T19:55:19.316973+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":6924417,"latency_human":"6.924417ms","bytes_in":0,"bytes_out":84}
+{"time":"2025-03-14T19:55:23.215787+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1796958,"latency_human":"1.796958ms","bytes_in":135,"bytes_out":109}
+{"time":"2025-03-14T19:55:54.901085+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":6583625,"latency_human":"6.583625ms","bytes_in":128,"bytes_out":149}
+{"time":"2025-03-14T19:56:01.678485+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2426666,"latency_human":"2.426666ms","bytes_in":0,"bytes_out":298}
+{"time":"2025-03-14T19:57:26.37165+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":2893125,"latency_human":"2.893125ms","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:57:26.592845+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":11709,"latency_human":"11.709µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:57:26.80976+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":12292,"latency_human":"12.292µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:57:27.004656+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":891375,"latency_human":"891.375µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-14T19:57:27.200047+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","status":200,"error":"","latency":11417,"latency_human":"11.417µs","bytes_in":0,"bytes_out":58}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T20:57:51.89626+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":112516875,"latency_human":"112.516875ms","bytes_in":0,"bytes_out":298}
+{"time":"2025-03-14T21:00:01.778216+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":61324041,"latency_human":"61.324041ms","bytes_in":110,"bytes_out":109}
+{"time":"2025-03-14T21:00:04.980722+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/3","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":2919833,"latency_human":"2.919833ms","bytes_in":110,"bytes_out":109}
+{"time":"2025-03-14T21:02:36.930247+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":67485459,"latency_human":"67.485459ms","bytes_in":0,"bytes_out":298}
+{"time":"2025-03-14T21:02:44.292492+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/users/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":24438750,"latency_human":"24.43875ms","bytes_in":155,"bytes_out":166}
+{"time":"2025-03-14T21:02:51.919073+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/users/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4305750,"latency_human":"4.30575ms","bytes_in":0,"bytes_out":84}
+{"time":"2025-03-14T21:02:57.557328+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":7873958,"latency_human":"7.873958ms","bytes_in":128,"bytes_out":109}
+{"time":"2025-03-14T21:03:05.985233+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/users/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":4393209,"latency_human":"4.393209ms","bytes_in":128,"bytes_out":149}
+{"time":"2025-03-14T21:03:08.609791+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1382875,"latency_human":"1.382875ms","bytes_in":0,"bytes_out":292}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:12:12.982093+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":1569250,"latency_human":"1.56925ms","bytes_in":23,"bytes_out":24}
+{"time":"2025-03-14T21:12:34.061423+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":369000,"latency_human":"369µs","bytes_in":63,"bytes_out":24}
+{"time":"2025-03-14T21:12:53.058146+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":374292,"latency_human":"374.292µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:14:00.33979+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":18015750,"latency_human":"18.01575ms","bytes_in":63,"bytes_out":166}
+{"time":"2025-03-14T21:14:06.1721+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2275209,"latency_human":"2.275209ms","bytes_in":0,"bytes_out":333}
+{"time":"2025-03-14T21:16:02.529765+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":32543208,"latency_human":"32.543208ms","bytes_in":0,"bytes_out":107}
+{"time":"2025-03-14T21:16:07.324449+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4300250,"latency_human":"4.30025ms","bytes_in":0,"bytes_out":87}
+{"time":"2025-03-14T21:16:37.612633+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":26826084,"latency_human":"26.826084ms","bytes_in":0,"bytes_out":332}
+{"time":"2025-03-14T21:16:55.801347+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/categories/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":16324834,"latency_human":"16.324834ms","bytes_in":70,"bytes_out":173}
+{"time":"2025-03-14T21:16:59.125408+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/categories/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":5219625,"latency_human":"5.219625ms","bytes_in":0,"bytes_out":112}
+{"time":"2025-03-14T21:17:40.321204+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":2356167,"latency_human":"2.356167ms","bytes_in":0,"bytes_out":109}
+{"time":"2025-03-14T21:17:43.134158+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users/2","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":793209,"latency_human":"793.209µs","bytes_in":0,"bytes_out":109}
+{"time":"2025-03-14T21:17:44.792874+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users/3","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":1104542,"latency_human":"1.104542ms","bytes_in":0,"bytes_out":109}
+{"time":"2025-03-14T21:17:46.053105+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users/4","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1258916,"latency_human":"1.258916ms","bytes_in":0,"bytes_out":104}
+{"time":"2025-03-14T21:18:03.841068+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/4","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":1259125,"latency_human":"1.259125ms","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T21:18:05.144505+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":133500,"latency_human":"133.5µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:24:45.385142+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":1031875,"latency_human":"1.031875ms","bytes_in":93,"bytes_out":164}
+{"time":"2025-03-14T21:25:01.457641+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":289334,"latency_human":"289.334µs","bytes_in":93,"bytes_out":164}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:25:35.58664+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":1094792,"latency_human":"1.094792ms","bytes_in":93,"bytes_out":164}
+{"time":"2025-03-14T21:25:36.550457+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":191959,"latency_human":"191.959µs","bytes_in":93,"bytes_out":164}
+{"time":"2025-03-14T21:25:41.881642+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":3751875,"latency_human":"3.751875ms","bytes_in":83,"bytes_out":32}
+{"time":"2025-03-14T21:25:43.27201+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":1070875,"latency_human":"1.070875ms","bytes_in":83,"bytes_out":32}
+{"time":"2025-03-14T21:25:43.582025+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":972500,"latency_human":"972.5µs","bytes_in":83,"bytes_out":32}
+{"time":"2025-03-14T21:25:51.278765+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1009047958,"latency_human":"1.009047958s","bytes_in":107,"bytes_out":151}
+{"time":"2025-03-14T21:25:54.097387+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":998131875,"latency_human":"998.131875ms","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-14T21:25:59.466531+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":147416,"latency_human":"147.416µs","bytes_in":93,"bytes_out":164}
+{"time":"2025-03-14T21:26:00.514133+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: token is malformed: could not JSON decode claim: json: cannot unmarshal number into Go struct field RegisteredClaims.sub of type string","latency":67667,"latency_human":"67.667µs","bytes_in":93,"bytes_out":164}
+{"time":"2025-03-14T21:26:26.666633+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":223625,"latency_human":"223.625µs","bytes_in":93,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:26:44.469914+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":1017208,"latency_human":"1.017208ms","bytes_in":93,"bytes_out":24}
+{"time":"2025-03-14T21:26:45.324841+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":123166,"latency_human":"123.166µs","bytes_in":93,"bytes_out":24}
+{"time":"2025-03-14T21:26:45.639742+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":194750,"latency_human":"194.75µs","bytes_in":93,"bytes_out":24}
+{"time":"2025-03-14T21:27:18.419308+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1011243375,"latency_human":"1.011243375s","bytes_in":107,"bytes_out":109}
+{"time":"2025-03-14T21:27:23.532947+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4744417,"latency_human":"4.744417ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-14T21:27:27.587544+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":132750,"latency_human":"132.75µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-14T21:27:30.574225+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":111708,"latency_human":"111.708µs","bytes_in":93,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-14T21:28:05.286638+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":9456625,"latency_human":"9.456625ms","bytes_in":93,"bytes_out":191}
+{"time":"2025-03-14T21:28:35.760422+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":5364958,"latency_human":"5.364958ms","bytes_in":93,"bytes_out":191}
+{"time":"2025-03-14T21:28:39.423506+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":156042,"latency_human":"156.042µs","bytes_in":93,"bytes_out":24}
+{"time":"2025-03-14T21:28:43.839597+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":5651792,"latency_human":"5.651792ms","bytes_in":93,"bytes_out":191}
+{"time":"2025-03-14T21:28:47.435001+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4383167,"latency_human":"4.383167ms","bytes_in":0,"bytes_out":110}
+{"time":"2025-03-14T21:28:53.550208+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":1382792,"latency_human":"1.382792ms","bytes_in":0,"bytes_out":106}
+{"time":"2025-03-14T21:28:56.468287+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1213250,"latency_human":"1.21325ms","bytes_in":0,"bytes_out":120}
+{"time":"2025-03-14T21:29:01.641383+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1600792,"latency_human":"1.600792ms","bytes_in":0,"bytes_out":256}
+{"time":"2025-03-14T22:35:35.296728+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":52351375,"latency_human":"52.351375ms","bytes_in":0,"bytes_out":256}
+{"time":"2025-03-14T22:35:43.098342+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2349416,"latency_human":"2.349416ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-14T22:35:44.169724+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2872333,"latency_human":"2.872333ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-14T22:35:44.472725+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2376709,"latency_human":"2.376709ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-14T22:35:45.99491+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1542208,"latency_human":"1.542208ms","bytes_in":0,"bytes_out":256}
+{"time":"2025-03-14T22:35:47.515108+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=15","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1955292,"latency_human":"1.955292ms","bytes_in":0,"bytes_out":256}
+{"time":"2025-03-14T22:35:51.152426+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2021792,"latency_human":"2.021792ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-14T22:42:34.928529+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/whatsapp/send","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":2129583,"latency_human":"2.129583ms","bytes_in":54,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T01:16:59.211805+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Wireless&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":5273458,"latency_human":"5.273458ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:10.507229+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Ele&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1821250,"latency_human":"1.82125ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:21.334883+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Laptop%20ASUS&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3560667,"latency_human":"3.560667ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:27.122859+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":15935500,"latency_human":"15.9355ms","bytes_in":93,"bytes_out":191}
+{"time":"2025-03-15T01:17:30.66892+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Laptop%20ASUS&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2421458,"latency_human":"2.421458ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:31.598111+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Laptop%20ASUS&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1190959,"latency_human":"1.190959ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:34.822807+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Laptop%20ASUS&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2869292,"latency_human":"2.869292ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:17:35.679299+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?name=Laptop%20ASUS&page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2794500,"latency_human":"2.7945ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:18:56.969306+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4864625,"latency_human":"4.864625ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:18:58.52232+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2736083,"latency_human":"2.736083ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:18:58.979084+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2708875,"latency_human":"2.708875ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:18:59.527165+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3368667,"latency_human":"3.368667ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:19:00.019883+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=2&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2017291,"latency_human":"2.017291ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T01:19:01.964795+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1250833,"latency_human":"1.250833ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:02.635837+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1697458,"latency_human":"1.697458ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:03.072649+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":824750,"latency_human":"824.75µs","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:11.015314+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2378792,"latency_human":"2.378792ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:27.209095+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":19973000,"latency_human":"19.973ms","bytes_in":92,"bytes_out":190}
+{"time":"2025-03-15T01:19:32.185072+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2304667,"latency_human":"2.304667ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:35.677363+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2100917,"latency_human":"2.100917ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:36.073335+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3137959,"latency_human":"3.137959ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:36.556273+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2962042,"latency_human":"2.962042ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:41.494462+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1917500,"latency_human":"1.9175ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:42.019408+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Laptop","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1857083,"latency_human":"1.857083ms","bytes_in":0,"bytes_out":337}
+{"time":"2025-03-15T01:19:44.394846+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Ele","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2253333,"latency_human":"2.253333ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:56.985884+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3751042,"latency_human":"3.751042ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:57.799851+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1856750,"latency_human":"1.85675ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:58.140339+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1088667,"latency_human":"1.088667ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:58.745626+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1660417,"latency_human":"1.660417ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:59.240385+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2280375,"latency_human":"2.280375ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:19:59.94065+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=3","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1680083,"latency_human":"1.680083ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:20:00.260087+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=3","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1124917,"latency_human":"1.124917ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:20:00.955396+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=4","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2287542,"latency_human":"2.287542ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:20:01.999106+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&name=Elektronik&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1731667,"latency_human":"1.731667ms","bytes_in":0,"bytes_out":255}
+{"time":"2025-03-15T01:20:07.109753+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2331375,"latency_human":"2.331375ms","bytes_in":0,"bytes_out":417}
+{"time":"2025-03-15T01:20:10.924621+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1087417,"latency_human":"1.087417ms","bytes_in":0,"bytes_out":417}
+{"time":"2025-03-15T01:20:12.548836+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=3","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2526166,"latency_human":"2.526166ms","bytes_in":0,"bytes_out":417}
+{"time":"2025-03-15T01:20:15.637814+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=4","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1287375,"latency_human":"1.287375ms","bytes_in":0,"bytes_out":417}
+{"time":"2025-03-15T01:20:17.615732+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1550250,"latency_human":"1.55025ms","bytes_in":0,"bytes_out":417}
+{"time":"2025-03-15T02:04:02.827858+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":128699750,"latency_human":"128.69975ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:04:09.064632+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":15902083,"latency_human":"15.902083ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:04:10.364495+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/2","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":10737500,"latency_human":"10.7375ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:04:13.924112+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":6579000,"latency_human":"6.579ms","bytes_in":0,"bytes_out":494}
+{"time":"2025-03-15T02:04:22.21972+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":26361875,"latency_human":"26.361875ms","bytes_in":0,"bytes_out":494}
+{"time":"2025-03-15T02:04:27.711422+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2217834,"latency_human":"2.217834ms","bytes_in":0,"bytes_out":494}
+{"time":"2025-03-15T02:04:29.633018+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2357083,"latency_human":"2.357083ms","bytes_in":0,"bytes_out":494}
+{"time":"2025-03-15T02:04:31.195246+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category_id=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1004666,"latency_human":"1.004666ms","bytes_in":0,"bytes_out":494}
+{"time":"2025-03-15T02:04:45.25603+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":21723292,"latency_human":"21.723292ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:04:46.857417+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3500500,"latency_human":"3.5005ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:04:50.557229+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3033958,"latency_human":"3.033958ms","bytes_in":0,"bytes_out":284}
+{"time":"2025-03-15T02:06:09.371636+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":60705375,"latency_human":"60.705375ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:06:17.288391+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":10045250,"latency_human":"10.04525ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:06:17.868021+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":3184042,"latency_human":"3.184042ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:06:18.395729+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":2864417,"latency_human":"2.864417ms","bytes_in":123,"bytes_out":189}
+{"time":"2025-03-15T02:06:23.100217+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":18195500,"latency_human":"18.1955ms","bytes_in":0,"bytes_out":284}
+{"time":"2025-03-15T02:06:23.481345+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1580625,"latency_human":"1.580625ms","bytes_in":0,"bytes_out":284}
+{"time":"2025-03-15T02:06:23.928504+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1073916,"latency_human":"1.073916ms","bytes_in":0,"bytes_out":284}
+{"time":"2025-03-15T02:06:29.71137+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1490208,"latency_human":"1.490208ms","bytes_in":0,"bytes_out":285}
+{"time":"2025-03-15T02:06:33.086449+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2563333,"latency_human":"2.563333ms","bytes_in":0,"bytes_out":284}
+{"time":"2025-03-15T02:06:36.211773+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4681375,"latency_human":"4.681375ms","bytes_in":0,"bytes_out":374}
+{"time":"2025-03-15T02:06:40.05068+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":6630792,"latency_human":"6.630792ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:40.498077+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2719917,"latency_human":"2.719917ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:40.851522+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1807291,"latency_human":"1.807291ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:41.210671+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2995250,"latency_human":"2.99525ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:41.791041+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1759000,"latency_human":"1.759ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:42.650101+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1873459,"latency_human":"1.873459ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:42.944036+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2356708,"latency_human":"2.356708ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:43.461434+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2274916,"latency_human":"2.274916ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:43.783858+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4069750,"latency_human":"4.06975ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:46.348696+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Baju","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2068917,"latency_human":"2.068917ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:46.677692+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Baju","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2449125,"latency_human":"2.449125ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:06:46.995697+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Baju","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1829042,"latency_human":"1.829042ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:07:36.137375+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3416000,"latency_human":"3.416ms","bytes_in":0,"bytes_out":810}
+{"time":"2025-03-15T02:07:36.442116+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1808208,"latency_human":"1.808208ms","bytes_in":0,"bytes_out":810}
+{"time":"2025-03-15T02:07:36.866515+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1898208,"latency_human":"1.898208ms","bytes_in":0,"bytes_out":810}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:08:10.797032+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":5922833,"latency_human":"5.922833ms","bytes_in":123,"bytes_out":110}
+{"time":"2025-03-15T02:08:16.392855+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":1628500,"latency_human":"1.6285ms","bytes_in":123,"bytes_out":110}
+{"time":"2025-03-15T02:08:21.436745+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":12654209,"latency_human":"12.654209ms","bytes_in":123,"bytes_out":242}
+{"time":"2025-03-15T02:08:30.786658+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/2","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":2148458,"latency_human":"2.148458ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:08:32.868704+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/3","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":1315000,"latency_human":"1.315ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:08:34.166454+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/4","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":1300750,"latency_human":"1.30075ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:08:35.116145+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/5","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":1118416,"latency_human":"1.118416ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:08:35.960477+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":8019125,"latency_human":"8.019125ms","bytes_in":123,"bytes_out":242}
+{"time":"2025-03-15T02:08:58.868094+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4483459,"latency_human":"4.483459ms","bytes_in":0,"bytes_out":374}
+{"time":"2025-03-15T02:09:06.454439+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4763750,"latency_human":"4.76375ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:09:07.818466+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2912375,"latency_human":"2.912375ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:12.757981+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Elektronik","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":5515208,"latency_human":"5.515208ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:15.110999+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":12069125,"latency_human":"12.069125ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:16.927083+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2063958,"latency_human":"2.063958ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:20.745309+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Elektronik","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2196667,"latency_human":"2.196667ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:30.248638+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/categories/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":13974667,"latency_human":"13.974667ms","bytes_in":57,"bytes_out":160}
+{"time":"2025-03-15T02:09:37.927341+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":7482666,"latency_human":"7.482666ms","bytes_in":123,"bytes_out":236}
+{"time":"2025-03-15T02:09:41.340203+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Elektronik","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2354792,"latency_human":"2.354792ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:42.723129+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=Elektronik","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4328584,"latency_human":"4.328584ms","bytes_in":0,"bytes_out":307}
+{"time":"2025-03-15T02:09:49.090058+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":4416083,"latency_human":"4.416083ms","bytes_in":0,"bytes_out":301}
+{"time":"2025-03-15T02:09:52.815526+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2721792,"latency_human":"2.721792ms","bytes_in":0,"bytes_out":433}
+{"time":"2025-03-15T02:09:55.469445+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3660750,"latency_human":"3.66075ms","bytes_in":0,"bytes_out":301}
+{"time":"2025-03-15T02:10:06.638841+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/categories?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3231625,"latency_human":"3.231625ms","bytes_in":0,"bytes_out":332}
+{"time":"2025-03-15T02:10:10.000205+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/users?page=1&limit=5","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1956667,"latency_human":"1.956667ms","bytes_in":0,"bytes_out":374}
+{"time":"2025-03-15T02:10:15.173036+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":14291958,"latency_human":"14.291958ms","bytes_in":0,"bytes_out":110}
+{"time":"2025-03-15T02:10:16.62054+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/products/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3520292,"latency_human":"3.520292ms","bytes_in":0,"bytes_out":110}
+{"time":"2025-03-15T02:10:18.894591+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2222208,"latency_human":"2.222208ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:10:21.560586+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":5916875,"latency_human":"5.916875ms","bytes_in":123,"bytes_out":236}
+{"time":"2025-03-15T02:10:25.908469+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":400,"error":"","latency":1533708,"latency_human":"1.533708ms","bytes_in":123,"bytes_out":110}
+{"time":"2025-03-15T02:10:29.247518+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":7376459,"latency_human":"7.376459ms","bytes_in":123,"bytes_out":236}
+{"time":"2025-03-15T02:10:33.171737+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3276333,"latency_human":"3.276333ms","bytes_in":0,"bytes_out":301}
+{"time":"2025-03-15T02:10:36.569618+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2195708,"latency_human":"2.195708ms","bytes_in":0,"bytes_out":427}
+{"time":"2025-03-15T02:10:38.522102+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3152041,"latency_human":"3.152041ms","bytes_in":0,"bytes_out":301}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:19:43.540236+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/api/products/create","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":14545583,"latency_human":"14.545583ms","bytes_in":123,"bytes_out":236}
+{"time":"2025-03-15T02:19:49.194941+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/1","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"","latency":3009792,"latency_human":"3.009792ms","bytes_in":123,"bytes_out":106}
+{"time":"2025-03-15T02:19:52.704166+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"PUT","uri":"/api/products/3","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":12460833,"latency_human":"12.460833ms","bytes_in":123,"bytes_out":242}
+{"time":"2025-03-15T02:19:57.998035+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/products/2","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":5408083,"latency_human":"5.408083ms","bytes_in":0,"bytes_out":110}
+{"time":"2025-03-15T02:20:01.37926+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"DELETE","uri":"/api/products/3","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":5472500,"latency_human":"5.4725ms","bytes_in":0,"bytes_out":110}
+{"time":"2025-03-15T02:20:15.095793+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1001981708,"latency_human":"1.001981708s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-15T02:20:18.818053+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1044352875,"latency_human":"1.044352875s","bytes_in":107,"bytes_out":109}
+{"time":"2025-03-15T02:20:32.998698+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1012783625,"latency_human":"1.012783625s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-15T02:20:36.682454+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1006769958,"latency_human":"1.006769958s","bytes_in":107,"bytes_out":109}
+{"time":"2025-03-15T02:25:30.765082+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":2338084,"latency_human":"2.338084ms","bytes_in":0,"bytes_out":58}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:36:16.86083+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products?page=1&limit=10&category=CACA","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":60779250,"latency_human":"60.77925ms","bytes_in":0,"bytes_out":175}
+{"time":"2025-03-15T02:37:09.500453+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":608125,"latency_human":"608.125µs","bytes_in":0,"bytes_out":58}
+{"time":"2025-03-15T02:43:54.593133+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":41875167,"latency_human":"41.875167ms","bytes_in":97,"bytes_out":32}
+{"time":"2025-03-15T02:43:58.059392+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1036806500,"latency_human":"1.0368065s","bytes_in":130,"bytes_out":121}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:44:41.727078+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"xml: unsupported type: echo.Map","latency":1010586333,"latency_human":"1.010586333s","bytes_in":130,"bytes_out":39}
+{"time":"2025-03-15T02:44:43.82252+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"xml: unsupported type: echo.Map","latency":1012279625,"latency_human":"1.012279625s","bytes_in":130,"bytes_out":39}
+{"time":"2025-03-15T02:46:20.916324+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1051939417,"latency_human":"1.051939417s","bytes_in":114,"bytes_out":196}
+{"time":"2025-03-15T02:46:31.611737+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":1061910208,"latency_human":"1.061910208s","bytes_in":88,"bytes_out":39}
+{"time":"2025-03-15T02:48:03.461296+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":1010845500,"latency_human":"1.0108455s","bytes_in":88,"bytes_out":39}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:48:24.055774+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 33 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x102ce4780?, 0x140002881e0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400022a488, {0x102d5aa40, 0x140002b8000}, 0x140002a4000)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x102d58ed0?}, {0x102d5aa40?, 0x140002b8000?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x1400028c000, {0x102d5b590, 0x140003338f0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x103260bf8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x1400031aa00?, 0x1400028ff80?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x14000196b40, {0x102d5a530, 0x14000066f40})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400022a488, {0x102bdcf7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 6 [select]:\ndatabase/sql.(*DB).connectionOpener(0x14000238f70, {0x102d5b5c8, 0x140001cfea0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 7 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:48:24.056277+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1023458,"latency_human":"1.023458ms","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:48:25.866132+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 33 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x102ce4780?, 0x140000b13b0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x102d60240, 0x140000ab5e0})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x102d60240, 0x140000ab5e0})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x102d60240, 0x140000ab5e0})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x102d60240, 0x140000ab5e0})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400022a488, {0x102d5aa40, 0x14000122000}, 0x14000101680)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x102d58ed0?}, {0x102d5aa40?, 0x14000122000?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x1400028c000, {0x102d5b590, 0x140003338f0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x103260bf8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x1400031aa00?, 0x1400028ff80?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x14000196b40, {0x102d5a530, 0x14000066f40})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400022a488, {0x102bdcf7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 6 [select]:\ndatabase/sql.(*DB).connectionOpener(0x14000238f70, {0x102d5b5c8, 0x140001cfea0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 7 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:48:25.866197+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":145208,"latency_human":"145.208µs","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:48:26.281499+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 33 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x102ce4780?, 0x14000288450?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400022a488, {0x102d5aa40, 0x140002b81c0}, 0x140002a4140)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x102d58ed0?}, {0x102d5aa40?, 0x140002b81c0?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x1400028c000, {0x102d5b590, 0x140003338f0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x103260bf8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x1400031aa00?, 0x1400028ff80?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x14000196b40, {0x102d5a530, 0x14000066f40})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400022a488, {0x102bdcf7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 6 [select]:\ndatabase/sql.(*DB).connectionOpener(0x14000238f70, {0x102d5b5c8, 0x140001cfea0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 7 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:48:26.281607+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":260125,"latency_human":"260.125µs","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:48:32.911818+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 33 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x102ce4780?, 0x140002885a0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x102d60240, 0x140002bc000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400022a488, {0x102d5aa40, 0x140002b82a0}, 0x140002a4280)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x102d58ed0?}, {0x102d5aa40?, 0x140002b82a0?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x1400028c000, {0x102d5b590, 0x140003338f0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x103260bf8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x1400031aa00?, 0x1400028ff80?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x1400031aa00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x14000267e40)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x14000196b40, {0x102d5a530, 0x14000066f40})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400022a488, {0x102bdcf7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 6 [select]:\ndatabase/sql.(*DB).connectionOpener(0x14000238f70, {0x102d5b5c8, 0x140001cfea0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 7 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:48:32.912185+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":868708,"latency_human":"868.708µs","bytes_in":88,"bytes_out":36}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:49:17.754453+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1012544667,"latency_human":"1.012544667s","bytes_in":114,"bytes_out":195}
+{"time":"2025-03-15T02:49:20.758196+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 50 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x101340780?, 0x140002fefc0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x1013bc240, 0x1400028d720})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x1013bc240, 0x1400028d720})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x1013bc240, 0x1400028d720})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x1013bc240, 0x1400028d720})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400017a6c8, {0x1013b6a40, 0x140002be380}, 0x140002e8640)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x1013b4ed0?}, {0x1013b6a40?, 0x140002be380?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x140002f5290, {0x1013b7590, 0x140002fe8d0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c85f8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000287e00?, 0x100f25bf8?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x1400017ce10, {0x1013b6530, 0x14000296760})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400017a6c8, {0x101238f7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 35 [select]:\ndatabase/sql.(*DB).connectionOpener(0x1400024c410, {0x1013b75c8, 0x1400020a6e0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 36 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:49:20.758583+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1124209,"latency_human":"1.124209ms","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:49:21.869303+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 50 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x101340780?, 0x1400009e0c0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x1013bc240, 0x140000b8000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x1013bc240, 0x140000b8000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x1013bc240, 0x140000b8000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x1013bc240, 0x140000b8000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400017a6c8, {0x1013b6a40, 0x140000b4000}, 0x140000a0000)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x1013b4ed0?}, {0x1013b6a40?, 0x140000b4000?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x140002f5290, {0x1013b7590, 0x140002fe8d0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c85f8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000287e00?, 0x100f25bf8?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x1400017ce10, {0x1013b6530, 0x14000296760})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400017a6c8, {0x101238f7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 35 [select]:\ndatabase/sql.(*DB).connectionOpener(0x1400024c410, {0x1013b75c8, 0x1400020a6e0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 36 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\n"}
+{"time":"2025-03-15T02:49:21.869834+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":799583,"latency_human":"799.583µs","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:50:35.10312+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 22 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x101340780?, 0x1400007e150?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400017a6c8, {0x1013b6a40, 0x14000398000}, 0x14000394000)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x1013b4ed0?}, {0x1013b6a40?, 0x14000398000?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x140000a42d0, {0x1013b7590, 0x140002fe8d0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c85f8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000287e00?, 0x100f25bf8?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x1400017ce10, {0x1013b6530, 0x14000296760})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400017a6c8, {0x101238f7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 35 [select]:\ndatabase/sql.(*DB).connectionOpener(0x1400024c410, {0x1013b75c8, 0x1400020a6e0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 36 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\ngoroutine 50 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c83c8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000304000?, 0x14000306000?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/po\n"}
+{"time":"2025-03-15T02:50:35.103856+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":6643125,"latency_human":"6.643125ms","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:50:35.803899+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 22 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x101340780?, 0x1400007e360?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400017a6c8, {0x1013b6a40, 0x140003980e0}, 0x14000394140)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x1013b4ed0?}, {0x1013b6a40?, 0x140003980e0?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x140000a42d0, {0x1013b7590, 0x140002fe8d0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c85f8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000287e00?, 0x100f25bf8?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x1400017ce10, {0x1013b6530, 0x14000296760})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400017a6c8, {0x101238f7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 35 [select]:\ndatabase/sql.(*DB).connectionOpener(0x1400024c410, {0x1013b75c8, 0x1400020a6e0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 36 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\ngoroutine 50 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c83c8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000304000?, 0x14000306000?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/po\n"}
+{"time":"2025-03-15T02:50:35.804201+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1003250,"latency_human":"1.00325ms","bytes_in":88,"bytes_out":36}
+{"time":"2025-03-15T02:50:36.375466+07:00","level":"-","prefix":"echo","file":"recover.go","line":"119","message":"[PANIC RECOVER] interface conversion: interface {} is nil, not string goroutine 22 [running]:\nmain.main.Recover.RecoverWithConfig.func1.1.1()\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:99 +0x134\npanic({0x101340780?, 0x1400007e4b0?})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/panic.go:785 +0x124\ngo-test/controllers.Login({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/controllers/auth_controller.go:40 +0xbb0\ngithub.com/labstack/echo/v4.(*Echo).add.func1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581 +0x50\nmain.main.Recover.RecoverWithConfig.func1.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130 +0xe8\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1({0x1013bc240, 0x1400039c000})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125 +0xa0\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP(0x1400017a6c8, {0x1013b6a40, 0x140003981c0}, 0x14000394280)\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668 +0x304\nnet/http.serverHandler.ServeHTTP({0x1013b4ed0?}, {0x1013b6a40?, 0x140003981c0?}, 0x6?)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3210 +0xbc\nnet/http.(*conn).serve(0x140000a42d0, {0x1013b7590, 0x140002fe8d0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:2092 +0x4fc\ncreated by net/http.(*Server).Serve in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3360 +0x3dc\n\ngoroutine 1 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c85f8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000287e00?, 0x100f25bf8?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/poll.(*FD).Accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_unix.go:620 +0x24c\nnet.(*netFD).accept(0x14000287e00)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/fd_unix.go:172 +0x28\nnet.(*TCPListener).accept(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock_posix.go:159 +0x28\nnet.(*TCPListener).AcceptTCP(0x1400029db80)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/tcpsock.go:359 +0x2c\ngithub.com/labstack/echo/v4.tcpKeepAliveListener.Accept({0x14000039c98?})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:988 +0x1c\nnet/http.(*Server).Serve(0x1400017ce10, {0x1013b6530, 0x14000296760})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/net/http/server.go:3330 +0x294\ngithub.com/labstack/echo/v4.(*Echo).Start(0x1400017a6c8, {0x101238f7b, 0x5})\n\t/Users/dimdevs/go/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:685 +0xcc\nmain.main()\n\t/Users/dimdevs/Documents/work/service/dimdevs/interview/sentuh/go-test/main.go:28 +0x3b4\n\ngoroutine 35 [select]:\ndatabase/sql.(*DB).connectionOpener(0x1400024c410, {0x1013b75c8, 0x1400020a6e0})\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:1253 +0x80\ncreated by database/sql.OpenDB in goroutine 1\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/database/sql/sql.go:833 +0x128\n\ngoroutine 36 [select]:\ngithub.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1()\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:614 +0x7c\ncreated by github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher in goroutine 1\n\t/Users/dimdevs/go/pkg/mod/github.com/go-sql-driver/mysql@v1.7.0/connection.go:611 +0xf8\n\ngoroutine 50 [IO wait]:\ninternal/poll.runtime_pollWait(0x1082c83c8, 0x72)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/runtime/netpoll.go:351 +0xa0\ninternal/poll.(*pollDesc).wait(0x14000304000?, 0x14000306000?, 0x0)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:84 +0x28\ninternal/poll.(*pollDesc).waitRead(...)\n\t/opt/homebrew/Cellar/go/1.23.5/libexec/src/internal/poll/fd_poll_runtime.go:89\ninternal/po\n"}
+{"time":"2025-03-15T02:50:36.375656+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":448292,"latency_human":"448.292µs","bytes_in":88,"bytes_out":36}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:50:42.912488+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":1037328084,"latency_human":"1.037328084s","bytes_in":88,"bytes_out":39}
+{"time":"2025-03-15T02:50:43.826291+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":980941375,"latency_human":"980.941375ms","bytes_in":88,"bytes_out":39}
+{"time":"2025-03-15T02:50:45.30644+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":1002461708,"latency_human":"1.002461708s","bytes_in":88,"bytes_out":39}
+{"time":"2025-03-15T02:51:33.474949+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"xml: unsupported type: echo.Map","latency":1008676541,"latency_human":"1.008676541s","bytes_in":88,"bytes_out":39}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:53:52.38251+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":2416000,"latency_human":"2.416ms","bytes_in":83,"bytes_out":32}
+{"time":"2025-03-15T02:53:54.036207+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"","latency":1101458,"latency_human":"1.101458ms","bytes_in":83,"bytes_out":32}
+{"time":"2025-03-15T02:54:00.586944+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":201,"error":"","latency":1016773166,"latency_human":"1.016773166s","bytes_in":107,"bytes_out":151}
+{"time":"2025-03-15T02:54:03.532354+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1013138542,"latency_human":"1.013138542s","bytes_in":83,"bytes_out":134}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T02:54:29.812447+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1121644208,"latency_human":"1.121644208s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-15T02:54:36.007803+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1094128958,"latency_human":"1.094128958s","bytes_in":107,"bytes_out":109}
