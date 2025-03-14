@@ -19,10 +19,11 @@ func SetupRoutes(e *echo.Echo) {
 	api.Use(middleware.JWTMiddleware())
 
 	// User routes
-	api.GET("/users", controllers.GetUser)
-	api.POST("/users", controllers.CreateUser)
-	api.PUT("/users/:id", controllers.UpdateUser)
-	api.DELETE("/users/:id", controllers.DeleteUser)
+	api.POST("/users/create", controllers.SoapCreateUser)
+	api.GET("/users/:id", controllers.SoapGetUser)
+	api.GET("/users", controllers.SoapGetUsers)
+	api.PUT("/users/:id", controllers.SoapUpdateUser)
+	api.DELETE("/users/:id", controllers.SoapDeleteUser)
 
 	// Product routes
 	api.GET("/products", controllers.GetProduct)
