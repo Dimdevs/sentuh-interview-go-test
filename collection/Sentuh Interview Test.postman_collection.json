@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "13722907-e0de-4efd-a30c-5f00f71e5f6a",
+		"name": "Sentuh Interview Test",
+		"description": "# API System Documentation - Sentuh Interview Test\n\n## Overview\n\nSentuh Interview Test API adalah sistem yang dirancang untuk mengelola otentikasi pengguna, produk, kategori, dan pengguna dalam sebuah aplikasi. API ini menggunakan metode RESTful dengan format data JSON.\n\n## Teknologi yang Digunakan\n\n- **Backend Framework:** Go dengan Echo\n    \n- **Database:** MySQL\n    \n- **ORM:** GORM\n    \n- **Autentikasi:** JSON Web Token (JWT)\n    \n- **Dokumentasi API:** Postman\n    \n\n## Struktur API\n\nAPI ini terdiri dari beberapa modul utama:\n\n1. **Authentication (Auth)** - Untuk manajemen login dan registrasi pengguna.\n    \n2. **Product** - Untuk mengelola produk yang tersedia.\n    \n3. **User** - Untuk mengelola informasi pengguna.\n    \n4. **Category** - Untuk mengelola kategori produk.\n    \n5. **Welcome** - Endpoint default untuk pengujian API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22097543",
+		"_collection_link": "https://warped-rocket-810602.postman.co/workspace/My-Workspace~cba4b606-39dd-4c77-860e-37b6bf7186b6/collection/22097543-13722907-e0de-4efd-a30c-5f00f71e5f6a?action=share&source=collection_link&creator=22097543"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody); ",
+									"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"dimasmaulana9494@gmail.com\",\n    \"password\" : \"dimasmaulana9494\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"dimas\",\n    \"email\" : \"dimasmaulana9494@gmail.com\",  \n    \"password\" : \"dimasmaulana9494\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## Authentication (Auth)\n\n### Login\n\n- **Method:** POST\n    \n- **Endpoint:** `/auth/login`\n    \n- **Description:** Login user dengan kredensial yang valid.\n    \n- { \"email\": \"[user@example.com](https://mailto:user@example.com)\", \"password\": \"password123\"}\n    \n- { \"token\": \"your_jwt_token\"}\n    \n\n### Register\n\n- **Method:** POST\n    \n- **Endpoint:** `/auth/register`\n    \n- **Description:** Registrasi user baru.\n    \n- { \"name\": \"John Doe\", \"email\": \"[john@example.com](https://mailto:john@example.com)\", \"password\": \"password123\"}\n    \n- { \"message\": \"User registered successfully\"}"
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/products?page=1&limit=10&category=CACA",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "category",
+									"value": "CACA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/products/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<ProductRequest>\n    <name>iPhone 15</name>\n    <category_id>3</category_id>\n    <price>15000000</price>\n</ProductRequest>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/products/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<ProductRequest>\n    <name>iPhone 15</name>\n    <category_id>4</category_id>\n    <price>15000000</price>\n</ProductRequest>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/products/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/products",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## Product\n\n### Get Product List\n\n- **Method:** GET\n    \n- **Endpoint:** `/products`\n    \n- **Description:** Mengambil daftar produk.\n    \n\n### Get Product Detail\n\n- **Method:** GET\n    \n- **Endpoint:** `/products/{id}`\n    \n- **Description:** Mengambil detail produk berdasarkan ID.\n    \n\n### Create Product\n\n- **Method:** POST\n    \n- **Endpoint:** `/products`\n    \n- **Description:** Menambahkan produk baru.\n    \n- { \"name\": \"Product Name\", \"price\": 10000, \"description\": \"Product description\"}\n    \n\n### Update Product\n\n- **Method:** PUT\n    \n- **Endpoint:** `/products/{id}`\n    \n- **Description:** Memperbarui data produk.\n    \n\n### Delete Product\n\n- **Method:** DELETE\n    \n- **Endpoint:** `/products/{id}`\n    \n- **Description:** Menghapus produk berdasarkan ID."
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/users?page=1&limit=5",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/users/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<CreateUserRequest>\n    <name>Dim c</name>\n    <email>dim@c.com</email>\n    <password>dim@c.com</password>\n</CreateUserRequest>\n",
+							"options": {
+								"raw": {
+									"language": "html"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/users/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<UpdateUserRequest>\n    <name>Updated Name</name>\n    <email>updated@example.com</email>\n    <password>updated@example.com</password>\n</UpdateUserRequest>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/users/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/users/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## User\n\n### Get User List\n\n- **Method:** GET\n    \n- **Endpoint:** `/users`\n    \n- **Description:** Mengambil daftar pengguna.\n    \n\n### Get User Detail\n\n- **Method:** GET\n    \n- **Endpoint:** `/users/{id}`\n    \n- **Description:** Mengambil detail pengguna berdasarkan ID.\n    \n\n### Create User\n\n- **Method:** POST\n    \n- **Endpoint:** `/users`\n    \n- **Description:** Menambahkan pengguna baru.\n    \n\n### Update User\n\n- **Method:** PUT\n    \n- **Endpoint:** `/users/{id}`\n    \n- **Description:** Memperbarui data pengguna.\n    \n\n### Delete User\n\n- **Method:** DELETE\n    \n- **Endpoint:** `/users/{id}`\n    \n- **Description:** Menghapus pengguna berdasarkan ID."
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/categories?page=1&limit=5",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/categories/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<CategoryRequest>\n  <name>CACA</name>\n</CategoryRequest>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/categories/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<CategoryRequest>\n  <name>Elektronik Update</name>\n</CategoryRequest>\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/categories/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/api/categories/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## Category\n\n### Get Category List\n\n- **Method:** GET\n    \n- **Endpoint:** `/categories`\n    \n- **Description:** Mengambil daftar kategori.\n    \n\n### Get Category Detail\n\n- **Method:** GET\n    \n- **Endpoint:** `/categories/{id}`\n    \n- **Description:** Mengambil detail kategori berdasarkan ID.\n    \n\n### Create Category\n\n- **Method:** POST\n    \n- **Endpoint:** `/categories`\n    \n- **Description:** Menambahkan kategori baru.\n    \n\n### Update Category\n\n- **Method:** PUT\n    \n- **Endpoint:** `/categories/{id}`\n    \n- **Description:** Memperbarui data kategori.\n    \n\n### Delete Category\n\n- **Method:** DELETE\n    \n- **Endpoint:** `/categories/{id}`\n    \n- **Description:** Menghapus kategori berdasarkan ID."
+		},
+		{
+			"name": "Welcome",
+			"item": [
+				{
+					"name": "Hi, World",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}",
+							"host": [
+								"{{host}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## Welcome Checker, Mas Cen\n\n### Hi, World\n\n- **Method:** GET\n    \n- **Endpoint:** `/`\n    \n- **Description:** Endpoint default untuk pengujian API."
+		}
+	]
+}

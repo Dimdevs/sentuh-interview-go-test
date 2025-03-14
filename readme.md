@@ -1,4 +1,3 @@
-
 # 📦 Proyek REST API Golang – GO-TEST
 
 RESTful API sederhana menggunakan **Golang**, **Echo**, **GORM**, **MySQL**, dan **JWT**. Proyek ini mendukung autentikasi, manajemen user, produk, dan kategori lengkap dengan fitur pagination dan pencarian.
@@ -149,7 +148,7 @@ Authorization: Bearer token_jwt_kamu
 
 ## 🧪 Testing API
 
-Gunakan tools seperti:
+Info tools :
 - [Postman](https://www.postman.com/)
 - [curl](https://curl.se/)
 - Swagger (dalam pengembangan)
@@ -167,5 +166,5 @@ logs/server.log
 
 ## 👨‍💻 Developer
 
-**@dim.devs** – Influencer Coding (TikTok & Instagram)  
-Website: [https://dimdevs.dev](https://dimdevs.dev)
+**dimdevs**  
+Instagram: [https://www.instagram.com/dimdevs_/](https://www.instagram.com/dimdevs_/)
