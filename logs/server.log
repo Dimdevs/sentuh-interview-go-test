@@ -728,3 +728,42 @@ ____________________________________O/_______
 ⇨ http server started on [::]:5050
 {"time":"2025-03-15T02:54:29.812447+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1121644208,"latency_human":"1.121644208s","bytes_in":83,"bytes_out":134}
 {"time":"2025-03-15T02:54:36.007803+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/register","user_agent":"PostmanRuntime/7.43.2","status":500,"error":"","latency":1094128958,"latency_human":"1.094128958s","bytes_in":107,"bytes_out":109}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T03:27:20.860027+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api//products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":401,"error":"code=401, message=Unauthorized: invalid value in request header","latency":792875,"latency_human":"792.875µs","bytes_in":0,"bytes_out":60}
+{"time":"2025-03-15T03:27:25.348835+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"POST","uri":"/login","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":1020934375,"latency_human":"1.020934375s","bytes_in":83,"bytes_out":134}
+{"time":"2025-03-15T03:27:26.652971+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api//products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":452458,"latency_human":"452.458µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-15T03:27:33.718547+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":257084,"latency_human":"257.084µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-15T03:27:34.885555+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":61291,"latency_human":"61.291µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-15T03:28:12.738877+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":397417,"latency_human":"397.417µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-15T03:28:14.853323+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":186208,"latency_human":"186.208µs","bytes_in":0,"bytes_out":24}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.13.3
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:5050
+{"time":"2025-03-15T03:28:29.835328+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/api/products/soap/products.wsdl","user_agent":"PostmanRuntime/7.43.2","status":404,"error":"code=404, message=Not Found","latency":670917,"latency_human":"670.917µs","bytes_in":0,"bytes_out":24}
+{"time":"2025-03-15T04:03:28.647635+07:00","id":"","remote_ip":"::1","host":"localhost:5050","method":"GET","uri":"/","user_agent":"PostmanRuntime/7.43.2","status":200,"error":"","latency":3775000,"latency_human":"3.775ms","bytes_in":0,"bytes_out":58}

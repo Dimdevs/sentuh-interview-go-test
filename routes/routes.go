@@ -33,4 +33,8 @@ func SetupRoutes(e *echo.Echo) {
 	api.GET("/categories", controllers.SoapGetCategories)
 	api.PUT("/categories/:id", controllers.SoapUpdateCategory)
 	api.DELETE("/categories/:id", controllers.SoapDeleteCategory)
+
+	api.GET("/products/soap/products.wsdl", func(c echo.Context) error {
+		return c.File("product.wsdl")
+	})
 }

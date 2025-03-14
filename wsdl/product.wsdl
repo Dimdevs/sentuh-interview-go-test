@@ -1,0 +1,37 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" 
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    xmlns:tns="http://localhost:5050/wsdl" 
+    name="ProductService" 
+    targetNamespace="http://localhost:5050/wsdl">
+    
+    <message name="GetProductRequest">
+        <part name="id" type="xsd:int"/>
+    </message>
+
+    <message name="GetProductResponse">
+        <part name="product" type="xsd:string"/>
+    </message>
+
+    <portType name="ProductPortType">
+        <operation name="GetProduct">
+            <input message="tns:GetProductRequest"/>
+            <output message="tns:GetProductResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="ProductBinding" type="tns:ProductPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="GetProduct">
+            <soap:operation soapAction="GetProduct"/>
+            <input><soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+            <output><soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+        </operation>
+    </binding>
+
+    <service name="ProductService">
+        <port name="ProductPort" binding="tns:ProductBinding">
+            <soap:address location="http://localhost:5050/soap"/>
+        </port>
+    </service>
+</definitions>

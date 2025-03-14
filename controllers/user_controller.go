@@ -10,7 +10,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-// Request Structs
 type CreateUserRequest struct {
 	XMLName  xml.Name `xml:"CreateUserRequest"`
 	Name     string   `xml:"name"`
@@ -24,7 +23,6 @@ type UpdateUserRequest struct {
 	Email   string   `xml:"email"`
 }
 
-// Response Structs
 type ErrorResponse struct {
 	XMLName xml.Name `xml:"ErrorResponse"`
 	Message string   `xml:"message"`
@@ -53,7 +51,6 @@ type UserListResponse struct {
 	} `xml:"pagination"`
 }
 
-// Helper to convert model to XML response
 func toUserResponse(user models.User) UserResponse {
 	return UserResponse{
 		ID:    user.ID,
