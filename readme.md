@@ -50,6 +50,7 @@ JWT_SECRET=kangen_mas_cen
 ```bash
 go run main.go
 ```
+Aplikasi akan berjalan di http://localhost:5050.
 
 ---
 
