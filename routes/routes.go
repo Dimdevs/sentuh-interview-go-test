@@ -26,10 +26,11 @@ func SetupRoutes(e *echo.Echo) {
 	api.DELETE("/users/:id", controllers.SoapDeleteUser)
 
 	// Product routes
-	api.GET("/products", controllers.GetProduct)
-	api.POST("/products", controllers.CreateProduct)
-	api.PUT("/products/:id", controllers.UpdateProduct)
-	api.DELETE("/products/:id", controllers.DeleteProduct)
+	api.POST("/products/create", controllers.SoapCreateProduct)
+	api.GET("/products/:id", controllers.SoapGetProduct)
+	api.GET("/products", controllers.SoapGetProducts)
+	api.PUT("/products/:id", controllers.SoapUpdateProduct)
+	api.DELETE("/products/:id", controllers.SoapDeleteProduct)
 
 	// Category routes
 	api.POST("/categories/create", controllers.SoapCreateCategory)

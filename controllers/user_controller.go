@@ -73,10 +73,10 @@ func SoapCreateUser(c echo.Context) error {
 		return c.XML(http.StatusInternalServerError, ErrorResponse{Message: "Gagal menyimpan user"})
 	}
 
-	respUser := toUserResponse(user)
+	respData := toUserResponse(user)
 	resp := StatusResponse{
 		Status: "success",
-		User:   &respUser,
+		User:   &respData,
 	}
 	return c.XML(http.StatusCreated, resp)
 }
@@ -143,10 +143,10 @@ func SoapUpdateUser(c echo.Context) error {
 		return c.XML(http.StatusInternalServerError, ErrorResponse{Message: "Gagal update user"})
 	}
 
-	respUser := toUserResponse(user)
+	respData := toUserResponse(user)
 	resp := StatusResponse{
 		Status: "success",
-		User:   &respUser,
+		User:   &respData,
 	}
 	return c.XML(http.StatusOK, resp)
 }

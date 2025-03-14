@@ -1,6 +1,10 @@
+// controllers/soap_user_controller.go, soap_category_controller.go, soap_product_controller.go
+
+// Hanya bagian utama controller untuk SOAP Product
 package controllers
 
 import (
+	"encoding/xml"
 	"net/http"
 	"strconv"
 
@@ -10,33 +14,90 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func CreateProduct(c echo.Context) error {
-	var product models.Product
-	if err := c.Bind(&product); err != nil {
-		return c.JSON(http.StatusBadRequest, echo.Map{"error": "Invalid input"})
-	}
-
-	if err := config.DB.Create(&product).Error; err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.Map{"error": "Failed to create product"})
-	}
-
-	return c.JSON(http.StatusCreated, product)
+// ==== Product ====
+type ProductRequest struct {
+	XMLName    xml.Name `xml:"ProductRequest"`
+	Name       string   `xml:"name"`
+	CategoryID uint     `xml:"category_id"`
 }
 
-func GetProduct(c echo.Context) error {
-	var products []models.Product
+type ProductResponse struct {
+	XMLName    xml.Name `xml:"product"`
+	ID         uint     `xml:"id"`
+	Name       string   `xml:"name"`
+	CategoryID uint     `xml:"category_id"`
+}
 
-	page, err := strconv.Atoi(c.QueryParam("page"))
-	if err != nil || page < 1 {
+type ProductListResponse struct {
+	XMLName    xml.Name          `xml:"GetProductsResponse"`
+	Products   []ProductResponse `xml:"products>product"`
+	Pagination struct {
+		Page  int   `xml:"page"`
+		Limit int   `xml:"limit"`
+		Total int64 `xml:"total"`
+	} `xml:"pagination"`
+}
+
+type ProductStatusResponse struct {
+	XMLName xml.Name         `xml:"ProductStatusResponse"`
+	Status  string           `xml:"status"`
+	Product *ProductResponse `xml:"product,omitempty"`
+}
+
+type ProductErrorResponse struct {
+	XMLName xml.Name `xml:"ErrorResponse"`
+	Message string   `xml:"message"`
+}
+
+func toProductResponse(p models.Product) ProductResponse {
+	return ProductResponse{
+		ID:         p.ID,
+		Name:       p.Name,
+		CategoryID: p.CategoryID,
+	}
+}
+
+func SoapCreateProduct(c echo.Context) error {
+	var req ProductRequest
+	if err := xml.NewDecoder(c.Request().Body).Decode(&req); err != nil {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Invalid XML"})
+	}
+
+	product := models.Product{Name: req.Name, CategoryID: req.CategoryID}
+	if err := config.DB.Create(&product).Error; err != nil {
+		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to create product"})
+	}
+
+	respData := toProductResponse(product)
+	return c.XML(http.StatusCreated, ProductStatusResponse{
+		Status:  "success",
+		Product: &respData,
+	})
+}
+
+func SoapGetProduct(c echo.Context) error {
+	id, _ := strconv.Atoi(c.Param("id"))
+	var product models.Product
+	if err := config.DB.First(&product, id).Error; err != nil {
+		return c.XML(http.StatusNotFound, ProductErrorResponse{Message: "Product not found"})
+	}
+
+	return c.XML(http.StatusOK, toProductResponse(product))
+}
+
+func SoapGetProducts(c echo.Context) error {
+	page, _ := strconv.Atoi(c.QueryParam("page"))
+	limit, _ := strconv.Atoi(c.QueryParam("limit"))
+	if page <= 0 {
 		page = 1
 	}
-	limit, err := strconv.Atoi(c.QueryParam("limit"))
-	if err != nil || limit < 1 {
+	if limit <= 0 {
 		limit = 10
 	}
 	offset := (page - 1) * limit
 
-	query := config.DB.Preload("Category").Offset(offset).Limit(limit)
+	var products []models.Product
+	query := config.DB.Offset(offset).Limit(limit)
 
 	if name := c.QueryParam("name"); name != "" {
 		query = query.Where("products.name LIKE ?", "%"+name+"%")
@@ -47,7 +108,7 @@ func GetProduct(c echo.Context) error {
 	}
 
 	if err := query.Find(&products).Error; err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.Map{"error": err.Error()})
+		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to fetch products"})
 	}
 
 	var total int64
@@ -59,50 +120,52 @@ func GetProduct(c echo.Context) error {
 		countQuery = countQuery.Joins("JOIN categories ON categories.id = products.category_id").
 			Where("categories.name LIKE ?", "%"+category+"%")
 	}
-	if err := countQuery.Count(&total).Error; err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.Map{"error": err.Error()})
+	countQuery.Count(&total)
+
+	var list []ProductResponse
+	for _, p := range products {
+		list = append(list, toProductResponse(p))
 	}
 
-	totalPages := (total + int64(limit) - 1) / int64(limit)
-	return c.JSON(http.StatusOK, echo.Map{
-		"products":    products,
-		"total":       total,
-		"page":        page,
-		"total_pages": totalPages,
+	resp := ProductListResponse{Products: list}
+	resp.Pagination.Page = page
+	resp.Pagination.Limit = limit
+	resp.Pagination.Total = total
+
+	return c.XML(http.StatusOK, resp)
+}
+
+func SoapUpdateProduct(c echo.Context) error {
+	id, _ := strconv.Atoi(c.Param("id"))
+	var product models.Product
+	if err := config.DB.First(&product, id).Error; err != nil {
+		return c.XML(http.StatusNotFound, ProductErrorResponse{Message: "Product not found"})
+	}
+
+	var req ProductRequest
+	if err := xml.NewDecoder(c.Request().Body).Decode(&req); err != nil {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Invalid XML"})
+	}
+
+	product.Name = req.Name
+	product.CategoryID = req.CategoryID
+
+	if err := config.DB.Save(&product).Error; err != nil {
+		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to update product"})
+	}
+
+	respData := toProductResponse(product)
+	return c.XML(http.StatusCreated, ProductStatusResponse{
+		Status:  "success",
+		Product: &respData,
 	})
 }
 
-func UpdateProduct(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.JSON(http.StatusBadRequest, echo.Map{"error": "Invalid product ID"})
-	}
-
-	var product models.Product
-	if err := config.DB.First(&product, id).Error; err != nil {
-		return c.JSON(http.StatusNotFound, echo.Map{"error": "Product not found"})
-	}
-
-	if err := c.Bind(&product); err != nil {
-		return c.JSON(http.StatusBadRequest, echo.Map{"error": "Invalid input"})
-	}
-
-	if err := config.DB.Save(&product).Error; err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.Map{"error": "Failed to update product"})
-	}
-
-	return c.JSON(http.StatusOK, product)
-}
-
-func DeleteProduct(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.JSON(http.StatusBadRequest, echo.Map{"error": "Invalid product ID"})
-	}
-
+func SoapDeleteProduct(c echo.Context) error {
+	id, _ := strconv.Atoi(c.Param("id"))
 	if err := config.DB.Delete(&models.Product{}, id).Error; err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.Map{"error": "Failed to delete product"})
+		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to delete product"})
 	}
 
-	return c.JSON(http.StatusNoContent, nil)
+	return c.XML(http.StatusOK, ProductStatusResponse{Status: "success"})
 }
