@@ -38,12 +38,12 @@ go mod tidy
 
 ### 3. Konfigurasi file `.env`
 ```env
-DB_USER=root
-DB_PASS=passwordmu
+DB_USER=mascen
+DB_PASS=mascen
 DB_NAME=test_db
 DB_HOST=127.0.0.1
 DB_PORT=3306
-JWT_SECRET=rahasia_super
+JWT_SECRET=kangen_mas_cen
 ```
 
 ### 4. Jalankan aplikasi
@@ -149,7 +149,7 @@ Authorization: Bearer token_jwt_kamu
 ## 🧪 Testing API
 
 Info tools :
-- [Postman](https://www.postman.com/)
+- [Postman](https://warped-rocket-810602.postman.co/workspace/My-Workspace~cba4b606-39dd-4c77-860e-37b6bf7186b6/folder/22097543-ab04b4ee-4cc8-4033-982c-607ecc4a30e2)
 - [curl](https://curl.se/)
 - Swagger (dalam pengembangan)
 
