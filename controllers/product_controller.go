@@ -1,6 +1,3 @@
-// controllers/soap_user_controller.go, soap_category_controller.go, soap_product_controller.go
-
-// Hanya bagian utama controller untuk SOAP Product
 package controllers
 
 import (
@@ -14,10 +11,10 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-// ==== Product ====
 type ProductRequest struct {
 	XMLName    xml.Name `xml:"ProductRequest"`
 	Name       string   `xml:"name"`
+	Price      float64  `xml:"price"`
 	CategoryID uint     `xml:"category_id"`
 }
 
@@ -25,7 +22,9 @@ type ProductResponse struct {
 	XMLName    xml.Name `xml:"product"`
 	ID         uint     `xml:"id"`
 	Name       string   `xml:"name"`
+	Price      float64  `xml:"price"`
 	CategoryID uint     `xml:"category_id"`
+	Category   string   `xml:"category"`
 }
 
 type ProductListResponse struct {
@@ -50,10 +49,22 @@ type ProductErrorResponse struct {
 }
 
 func toProductResponse(p models.Product) ProductResponse {
+	categoryName := ""
+	categoryID := uint(0)
+
+	if p.CategoryID != nil {
+		categoryID = *p.CategoryID
+	}
+	if p.Category != nil {
+		categoryName = p.Category.Name
+	}
+
 	return ProductResponse{
 		ID:         p.ID,
 		Name:       p.Name,
-		CategoryID: p.CategoryID,
+		Price:      p.Price,
+		CategoryID: categoryID,
+		Category:   categoryName,
 	}
 }
 
@@ -63,10 +74,26 @@ func SoapCreateProduct(c echo.Context) error {
 		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Invalid XML"})
 	}
 
-	product := models.Product{Name: req.Name, CategoryID: req.CategoryID}
+	if req.Price < 0 {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Price cannot be negative"})
+	}
+
+	var category models.Category
+	if err := config.DB.First(&category, req.CategoryID).Error; err != nil {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Category ID not found"})
+	}
+
+	product := models.Product{
+		Name:       req.Name,
+		Price:      req.Price,
+		CategoryID: &req.CategoryID,
+	}
+
 	if err := config.DB.Create(&product).Error; err != nil {
 		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to create product"})
 	}
+
+	config.DB.Preload("Category").First(&product)
 
 	respData := toProductResponse(product)
 	return c.XML(http.StatusCreated, ProductStatusResponse{
@@ -78,7 +105,7 @@ func SoapCreateProduct(c echo.Context) error {
 func SoapGetProduct(c echo.Context) error {
 	id, _ := strconv.Atoi(c.Param("id"))
 	var product models.Product
-	if err := config.DB.First(&product, id).Error; err != nil {
+	if err := config.DB.Preload("Category").First(&product, id).Error; err != nil {
 		return c.XML(http.StatusNotFound, ProductErrorResponse{Message: "Product not found"})
 	}
 
@@ -97,7 +124,7 @@ func SoapGetProducts(c echo.Context) error {
 	offset := (page - 1) * limit
 
 	var products []models.Product
-	query := config.DB.Offset(offset).Limit(limit)
+	query := config.DB.Offset(offset).Limit(limit).Preload("Category")
 
 	if name := c.QueryParam("name"); name != "" {
 		query = query.Where("products.name LIKE ?", "%"+name+"%")
@@ -138,6 +165,7 @@ func SoapGetProducts(c echo.Context) error {
 func SoapUpdateProduct(c echo.Context) error {
 	id, _ := strconv.Atoi(c.Param("id"))
 	var product models.Product
+
 	if err := config.DB.First(&product, id).Error; err != nil {
 		return c.XML(http.StatusNotFound, ProductErrorResponse{Message: "Product not found"})
 	}
@@ -147,15 +175,27 @@ func SoapUpdateProduct(c echo.Context) error {
 		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Invalid XML"})
 	}
 
+	if req.Price < 0 {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Price cannot be negative"})
+	}
+
+	var category models.Category
+	if err := config.DB.First(&category, req.CategoryID).Error; err != nil {
+		return c.XML(http.StatusBadRequest, ProductErrorResponse{Message: "Category ID not found"})
+	}
+
 	product.Name = req.Name
-	product.CategoryID = req.CategoryID
+	product.Price = req.Price
+	product.CategoryID = &req.CategoryID
 
 	if err := config.DB.Save(&product).Error; err != nil {
 		return c.XML(http.StatusInternalServerError, ProductErrorResponse{Message: "Failed to update product"})
 	}
 
+	config.DB.Preload("Category").First(&product)
+
 	respData := toProductResponse(product)
-	return c.XML(http.StatusCreated, ProductStatusResponse{
+	return c.XML(http.StatusOK, ProductStatusResponse{
 		Status:  "success",
 		Product: &respData,
 	})
