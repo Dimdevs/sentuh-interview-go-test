@@ -12,7 +12,7 @@ type Response struct {
 
 func OpenAPI(c echo.Context) error {
 	response := Response{
-		Message: "OPEN API by Dimdevs",
+		Message: "OPEN API by Dimdevs MAS CEN KANGEN -_- hihi",
 	}
 	return c.JSON(http.StatusOK, response)
 }
