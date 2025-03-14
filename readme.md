@@ -98,13 +98,13 @@ POST /login
 **Response:**
 ```json
 {
-  "token": "token_jwt_kamu"
+  "token": "token_jwt_mas_cendi"
 }
 ```
 
 > Gunakan token di header Authorization:
 ```
-Authorization: Bearer token_jwt_kamu
+Authorization: Bearer token_jwt_mas_cendi
 ```
 
 ---
